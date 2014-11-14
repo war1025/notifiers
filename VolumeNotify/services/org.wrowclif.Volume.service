@@ -1,0 +1,4 @@
+
+[D-BUS Service]
+Name=org.wrowclif.Volume
+Exec=~/.local/share/notifiers/bin/volume_notify

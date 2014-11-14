@@ -3,7 +3,7 @@ using Notify;
 [DBus (name="org.wrowclif.Volume")]
 public class Volume : Object {
 
-	private Notification notification;
+	private Notify.Notification notification;
 	private StringBuilder sb;
 	private string icon;
 
@@ -14,7 +14,7 @@ public class Volume : Object {
 	private static string SUMMARY_TEMPLATE = "<span font='mono 10'>%s</span>";
 
 	public Volume() {
-		notification = new Notification(" ", null, null);
+		notification = new Notify.Notification(" ", null, null);
 		notification.set_hint("transient", true);
 		sb = new StringBuilder();
 		icon = "";

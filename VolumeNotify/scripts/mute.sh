@@ -1,5 +1,5 @@
 #!/bin/sh
 
-amixer set Master toggle >> /dev/null
+amixer -D pulse set Master toggle >> /dev/null
 
-/home/war1025/Volume/show-volume.sh >> /dev/null
+~/.local/share/notifiers/volume/show-volume.sh >> /dev/null

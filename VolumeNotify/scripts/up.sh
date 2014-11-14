@@ -1,9 +1,7 @@
 #!/bin/sh
 
-#amixer set Master 3%+ >> /dev/null
+amixer -D pulse sset Master 3%+ >> /dev/null
 
-pactl set-sink-volume 0 +3%
-
-/home/war1025/Volume/show-volume.sh >> /dev/null
+~/.local/share/notifiers/volume/show-volume.sh >> /dev/null
 
 
