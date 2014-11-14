@@ -9,7 +9,7 @@ install : music
 	cp ./music ~/.local/share/notifiers/bin/music_notify
 	cp ./scripts/* ~/.local/share/notifiers/music/
 	mkdir -p ./temp_services
-	rm ./temp_services/*
+	rm -f ./temp_services/*
 	cp ./services/* ./temp_services/
 	find ./temp_services -type f | xargs sed -i -e "s,~,$(HOME),g"
 	cp ./temp_services/* ~/.local/share/dbus-1/services/

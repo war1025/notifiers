@@ -3,13 +3,13 @@ using Notify;
 [DBus (name="org.wrowclif.Music")]
 public class Music : Object {
 
-	private Notification notification;
+	private Notify.Notification notification;
 	private bool paused;
 
 	private static string icon = "gtk-jump-to-ltr";
 
 	public Music() {
-		this.notification = new Notification(" ", null, null);
+		this.notification = new Notify.Notification(" ", null, null);
 		this.notification.set_hint("transient", true);
 		this.paused = false;
 	}
