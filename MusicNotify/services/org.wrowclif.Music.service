@@ -1,0 +1,4 @@
+
+[D-BUS Service]
+Name=org.wrowclif.Music
+Exec=~/.local/share/notifiers/bin/music_notify

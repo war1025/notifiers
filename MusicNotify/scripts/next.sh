@@ -1,6 +1,6 @@
 #/bin/bash
 
-cd /home/war1025/Mpc
+cd ~/.local/share/notifiers/music
 
 mpc next
 ./cursong.sh

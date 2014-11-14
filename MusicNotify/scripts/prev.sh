@@ -1,4 +1,6 @@
 #/bin/bash
 
+cd ~/.local/share/notifiers/music
+
 mpc prev
-/home/war1025/Mpc/cursong.sh
+./cursong.sh
