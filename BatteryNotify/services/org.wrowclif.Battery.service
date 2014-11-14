@@ -1,0 +1,4 @@
+
+[D-BUS Service]
+Name=org.wrowclif.Battery
+Exec=~/.local/share/notifiers/bin/battery_notify
