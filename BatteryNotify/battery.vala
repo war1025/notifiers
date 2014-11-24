@@ -3,7 +3,7 @@ using Notify;
 [DBus (name="org.wrowclif.Battery")]
 public class Battery : Object {
 
-	private Notification notification;
+	private Notify.Notification notification;
 	private StringBuilder time;
 	private StringBuilder icon;
 
@@ -12,7 +12,7 @@ public class Battery : Object {
 	private static string CHARGE_TEMPLATE = "%s till full";
 
 	public Battery() {
-		notification = new Notification(" ", null, null);
+		notification = new Notify.Notification(" ", null, null);
 		notification.set_hint("transient", true);
 		time = new StringBuilder();
 		icon = new StringBuilder();
